@@ -29,17 +29,16 @@ result = [2]
 tmp = []
 i = 1
 while True:
-    print(i)
+    print(result)
     i = i + 2
-    sqrtRange = range(1, i)
+    sqrtRange = range(2, i -1)
     for n in sqrtRange:
-        print n
         if i % n != 0:
             tmp.append(True)
         elif i % n == 0:
             tmp.append(False)
-    if False in tmp == False:
-        result.append(i)
+        if False in tmp == False:
+            result.append(i)
     if len(result) == 10001:
         print(result[-1])
         break
