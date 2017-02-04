@@ -1,13 +1,13 @@
 import math
 
-'''result = []
+result = []
 base = 2
 register = base
 
-num = list(range(3,  10000000))
+num = list(range(3,  100))
 
 while num:
-    while register < 10000000:
+    while register < 100:
         if register in num:
             num.remove(register)
         register = register + base
@@ -17,31 +17,30 @@ while num:
     register = base
     del num[0]
     print(str(len(result)) + " = len")
-    if len(result) == 10002:
-        print (result)
+
+    print (result)
 
 
 result.append(base)
-print(result[-1])'''
+print(result[-1])
 
-
-result = [2]
+#NoNo......Failed....
+'''result = [2]
 tmp = []
 i = 1
+
+
 while True:
     print(result)
     i = i + 2
-    sqrtRange = range(2, i -1)
-    for n in sqrtRange:
-        if i % n != 0:
-            tmp.append(True)
-        elif i % n == 0:
-            tmp.append(False)
-        if False in tmp == False:
-            result.append(i)
+    Range = range(3, math.sqrt(i) -1)
+    for n in Range:
+        if i % n == 0:
+            break
+        result.append(i)
     if len(result) == 10001:
         print(result[-1])
-        break
+        break'''
 
 
 
