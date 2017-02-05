@@ -29,7 +29,7 @@ while True:
         print(str(len(result)) + " = len")
         print(result)
         if len(result) == 10001:
-            print(result[10001])
+            print(result[10000])
             sys.exit()
 
 
