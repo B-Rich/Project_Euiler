@@ -1,28 +1,41 @@
-import math
+import sys
 
-result = []
+
 base = 2
 register = base
+i = 100
+result = []
 
-num = list(range(3,  100))
+while True:
+    num = list(range(3, i))
+    i += 10000
+    while num:
+        while register < i:
+            if register in num:
+                if register in result:
+                    pass
+                num.remove(register)
+            register = register + base
 
-while num:
-    while register < 100:
-        if register in num:
-            num.remove(register)
-        register = register + base
-        print(register)
-    result.append(base)
-    base = num[0]
-    register = base
-    del num[0]
-    print(str(len(result)) + " = len")
+        result.append(base)
+        base = num[0]
+        register = base
+        del num[0]
 
-    print (result)
+        result = list(set(result))
+        if 4 in result:
+            result.remove(4)
+        result.sort()
+        print(str(len(result)) + " = len")
+        print(result)
+        if len(result) == 10001:
+            print(result[10001])
+            sys.exit()
+
 
 
 result.append(base)
-print(result[-1])
+print(result)
 
 #NoNo......Failed....
 '''result = [2]
