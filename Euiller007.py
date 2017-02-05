@@ -37,23 +37,6 @@ while True:
 result.append(base)
 print(result)
 
-#NoNo......Failed....
-'''result = [2]
-tmp = []
-i = 1
-
-
-while True:
-    print(result)
-    i = i + 2
-    Range = range(3, math.sqrt(i) -1)
-    for n in Range:
-        if i % n == 0:
-            break
-        result.append(i)
-    if len(result) == 10001:
-        print(result[-1])
-        break'''
 
 
 
