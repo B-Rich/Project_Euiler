@@ -12,7 +12,5 @@ for i in range(len(number)):
 
 
     if len(number) == i + 5:
-        print(resultList)
-        print("\n\n")
         resultList.sort()
         print(resultList[-1])
