@@ -5,9 +5,6 @@ s = -1
 t = 4
 key = True
 
-d = -1
-tmp_for = 0
-
 regist = []
 resultList = []
 
@@ -20,23 +17,16 @@ while key == True:
     regist = list(regist)
     print(regist)
 
-    '''for n in regist:
-        d += 1
-        if len(str(regist)) == d - 1:
-            break
-
-        result = int(regist[d]) * int(regist[d + 1])
-        resultList.append(result)
-        print(result)'''
+    result = int(regist[0]) * int(regist[1]) * int(regist[2]) * int(regist[3]) * int(regist[4])
 
 
 
-    resultList.sort()
     print(resultList)
 
     resultList.append(result)
-    if len(result) == t:
+    if len(number) == t:
         print(resultList)
         print("\n\n")
+        resultList.sort()
         print(resultList[-1])
         key = False
